@@ -1,0 +1,17 @@
+// Group Anagrams
+
+List<List<String>> groupAnagrams(List<String> words) {
+  Map<String, List<String>> result = {};
+
+  for (String word in words) {
+    String key = (word.split('')..sort()).join();
+    result.putIfAbsent(key, () => []);
+    result[key]!.add(word);
+  }
+  return result.values.toList();
+}
+
+void main(){
+  List<String> input = ["bat", "tab", "eat", "tea", "tan", "nat", "ate"];
+  print(groupAnagrams(input));
+}
