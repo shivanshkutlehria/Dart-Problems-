@@ -12,6 +12,6 @@ List<List<String>> groupAnagrams(List<String> words) {
 }
 
 void main(){
-  List<String> input = ["bat", "tab", "eat", "tea", "tan", "nat", "ate"];
+  List<String> input = ["eat","tea","tan","ate","nat","bat"];
   print(groupAnagrams(input));
 }
