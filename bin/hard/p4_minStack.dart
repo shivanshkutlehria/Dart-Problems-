@@ -15,8 +15,8 @@ class Stack {
 
   void pop() {
     if (_stack.isNotEmpty) {
-      _minstack.remove(_minstack.last);
-      _stack.remove(_stack.last);
+      _minstack.removeLast();
+      _stack.removeLast();
     }
   }
 
