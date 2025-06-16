@@ -1,4 +1,6 @@
 // Kadane's algorithm (Maximum subarray sum) Most efficient for subarray sum
+// does not work for negative answers with only one element in list.
+// need to use different for loop and need to work on indexes for that.
 import 'dart:math';
 
 int MaximumSubArray(List<int> a) {
